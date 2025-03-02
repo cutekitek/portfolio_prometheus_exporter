@@ -1,0 +1,8 @@
+host: 127.0.0.1
+port: 8080
+exchanges:
+  tinkoff:
+    interval: 10s
+    params:
+      api_key: 
+      app_name: tinkoff_exporter
