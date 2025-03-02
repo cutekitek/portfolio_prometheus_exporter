@@ -41,12 +41,10 @@ func NewTinkoffExporter(ctx context.Context, cfg config.ExchangeConfig, metricsM
 	if !ok {
 		return nil, fmt.Errorf("failed to initialize tinkoff exporter: missing api_key")
 	}
-	fmt.Println(apiKey)
 	appName, ok := cfg.Params["app_name"]
 	if !ok {
 		return nil, fmt.Errorf("failed to initialize tinkoff exporter: missing app_name")
 	}
-	fmt.Println(appName)
 	endpoint, ok := cfg.Params["api_endpoint"]
 	if !ok {
 		endpoint = defaultApiEndpoint
